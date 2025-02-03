@@ -12,7 +12,9 @@ const RevenueChart = () => {
       value: number;
     }[]
   > => {
-    const response = await fetch("http://localhost:5000/revenueDistribution");
+    const response = await fetch(
+      "https://music-dashboard-be.vercel.app/revenueDistribution"
+    );
     return response.json();
   };
 

@@ -22,7 +22,9 @@ const TopSongsChart = () => {
       streams: number;
     }[]
   > => {
-    const response = await fetch("http://localhost:5000/topStreamedSongs");
+    const response = await fetch(
+      "https://music-dashboard-be.vercel.app/topStreamedSongs"
+    );
     return response.json();
   };
 

@@ -22,7 +22,9 @@ type Metrics = {
 
 const Metrics = () => {
   const getMetrics = async (): Promise<Metrics> => {
-    const response = await fetch("http://localhost:5000/metrics");
+    const response = await fetch(
+      "https://music-dashboard-be.vercel.app/metrics"
+    );
     return response.json();
   };
 

@@ -46,7 +46,9 @@ const RecentStreamTable = () => {
   ];
 
   const getRecentStreams = async (): Promise<MusicCardType[]> => {
-    const response = await fetch("http://localhost:5000/recentStreams");
+    const response = await fetch(
+      "https://music-dashboard-be.vercel.app/recentStreams"
+    );
     return response.json();
   };
 

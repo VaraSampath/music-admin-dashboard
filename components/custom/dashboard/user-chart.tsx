@@ -21,7 +21,9 @@ type UsersByMonth = {
 
 const UserChart = () => {
   const getUsersByMonth = async (): Promise<UsersByMonth[]> => {
-    const response = await fetch("http://localhost:5000/userGrowth");
+    const response = await fetch(
+      "https://music-dashboard-be.vercel.app/userGrowth"
+    );
     return response.json();
   };
 
